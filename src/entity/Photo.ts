@@ -1,22 +1,13 @@
-import { Entity, Column, PrimaryColumn } from "typeorm"
+import { Entity, Column, PrimaryColumn } from "typeorm";
 
 @Entity()
 export class Photo {
   @PrimaryColumn()
-  id: number
+  id: number;
 
   @Column()
-  name: string
+  name: string;
 
   @Column()
-  description: string
-
-  @Column()
-  filename: string
-
-  @Column()
-  views: number
-
-  @Column()
-  isPublished: boolean
+  description: string;
 }
